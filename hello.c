@@ -11,30 +11,38 @@ Note  : The name "may" be an empty boast and is not subject for debate. Flames a
 #include <stdlib.h>
 
 typedef struct World {
-                      int id ; 
-                      char *msg;
-                      } World;
+	int id ;
+	char *msg ;
+	} World ;
 
 struct World *NewWorld(int id, char *msg){
 	World *world = malloc(sizeof(World)) ;
 	world->id = id ;
-	world->msg = strdup(msg);
+	world->msg = strdup(msg) ;
 	return world ;
-}
+	}
 
-void SayHi(World *world) {
-  assert(world != NULL);
-	printf("%d %s", world->id, world->msg);
-}
+void Say(World *world) {
+  assert(world != NULL) ;
+	printf("%d %s", world->id, world->msg) ;
+	}
 
 void DestroyWorld( World *world){
-	assert(world != NULL);
-	free(world);	
+	assert(world != NULL) ;
+	free(world) ;
 	}
 
 int main (int argc, char **argv) {
-World *wrl = NewWorld(1, "this");
-SayHi(wrl) ;
-DestroyWorld(wrl);
-return 0;
-}
+	
+	World *Whello = NewWorld(1, "Hello") ;
+	World *Wworld = NewWorld(1, "World") ;
+
+	Say(Whello) ;
+	Say(Wworld) ;
+
+	DestroyWorld(Whello) ;
+	DestroyWorld(Wworld) ;
+	
+	return 0 ;
+
+	}
