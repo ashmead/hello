@@ -24,7 +24,7 @@ struct World *NewWorld(int id, char *msg){
 
 void Say(World *world) {
 	assert(world != NULL) ;
-	printf("%d %s", world->id, world->msg) ;
+	printf("%d %s\n", world->id, world->msg) ;
 	}
 
 void DestroyWorld( World *world){
