@@ -2,6 +2,7 @@
 Name  : the most absolutely stunning hello world program in thello mutha fugin world!!!
 Lang  : C
 Auth  : Ashmead Mohammed
+Date  : Fri 23 May 2014
 Note  : The name "may" be an empty boast and is not subject for debate. Flames accepted. XP
 */
 
