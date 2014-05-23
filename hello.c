@@ -23,7 +23,7 @@ struct World *NewWorld(int id, char *msg){
 	}
 
 void Say(World *world) {
-  assert(world != NULL) ;
+	assert(world != NULL) ;
 	printf("%d %s", world->id, world->msg) ;
 	}
 
@@ -35,7 +35,7 @@ void DestroyWorld( World *world){
 int main (int argc, char **argv) {
 	
 	World *Whello = NewWorld(1, "Hello") ;
-	World *Wworld = NewWorld(1, "World") ;
+	World *Wworld = NewWorld(2, "World") ;
 
 	Say(Whello) ;
 	Say(Wworld) ;
