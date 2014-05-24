@@ -4,6 +4,12 @@ Disc  : Functions to create, retrieve from and delete data types
 Auth  : Ashmead Mohammed
 */
 
+#include <stdio.h>
+#include <assert.h>
+#include <string.h>
+#include <stdlib.h>
+#include "hello.h"
+
 struct World *NewWorld(int id, char *msg){
 	World *world = malloc(sizeof(World)) ;
 	world->id = id ;
