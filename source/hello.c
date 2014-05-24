@@ -1,19 +1,8 @@
 /*
-Name  : the most absolutely stunning hello world program in thello mutha fugin world!!!
-Lang  : C
+Name  : hello.c
+Disc  : Functions to create, retrieve from and delete data types
 Auth  : Ashmead Mohammed
-Note  : The name "may" be an empty boast and is not subject for debate. Flames accepted. XP
 */
-
-#include <stdio.h>
-#include <assert.h>
-#include <string.h>
-#include <stdlib.h>
-
-typedef struct World {
-	int id ;
-	char *msg ;
-	} World ;
 
 struct World *NewWorld(int id, char *msg){
 	World *world = malloc(sizeof(World)) ;
@@ -30,19 +19,4 @@ void Say(World *world) {
 void DestroyWorld( World *world){
 	assert(world != NULL) ;
 	free(world) ;
-	}
-
-int main (int argc, char **argv) {
-	
-	World *Whello = NewWorld(1, "Hello") ;
-	World *Wworld = NewWorld(2, "World") ;
-
-	Say(Whello) ;
-	Say(Wworld) ;
-
-	DestroyWorld(Whello) ;
-	DestroyWorld(Wworld) ;
-	
-	return 0 ;
-
 	}
