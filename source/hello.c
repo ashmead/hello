@@ -1,7 +1,9 @@
 /*
-Name  : hello.c
-Disc  : Functions to create, retrieve from and delete data types
-Auth  : Ashmead Mohammed
+ * This software is free to use and distribute in any form the end user sees fit.
+ * The author will stand no liability for damage or loss incured prior, during  and after its use. 
+Name        : hello.c
+Author      : Ashmead Mohammed
+Discription : Functions to create, retrieve from and delete data types
 */
 
 #include <stdio.h>
@@ -10,19 +12,19 @@ Auth  : Ashmead Mohammed
 #include <stdlib.h>
 #include "hello.h"
 
-struct World *NewWorld(int id, char *msg){
-	World *world = malloc(sizeof(World)) ;
-	world->id = id ;
-	world->msg = strdup(msg) ;
-	return world ;
+Object *NewObject(int id, const char *name){
+	Object *obj = malloc(sizeof(Object)) ;
+	obj->id = id ;
+	obj->name = strdup(name) ;
+	return obj ;
 	}
 
-void Say(World *world) {
-	assert(world != NULL) ;
-	printf("%d %s\n", world->id, world->msg) ;
+void ObjectOutput(Object *obj) {
+	assert(obj != NULL) ;
+	printf("%d %s\n", obj->id, obj->name) ;
 	}
 
-void DestroyWorld( World *world){
-	assert(world != NULL) ;
-	free(world) ;
+void DestroyObject(Object *obj){
+	assert(obj != NULL) ;
+	free(obj) ;
 	}
