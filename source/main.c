@@ -11,7 +11,7 @@ Discription : Hello World algorithm using abstract data types and some other bas
 
 int main (int argc, char **argv) {
 	if(argc == 1){
-		printf("Usage: %s arg1 arg2...", argv[0]) ;
+		printf("Usage: %s args...", argv[0]) ;
 		return -1 ;
 	}
 
