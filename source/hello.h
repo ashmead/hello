@@ -1,21 +1,23 @@
 /*
-Name : hello.h
-Disc : Defines for hello.c
-Auth : Ashmead Mohammed
+* This software is free to use and distribute in any form the end user sees fit.
+* The author will stand no liability for damage or loss incured prior, during  and after its use. 
+* Name        : hello.h
+* Author      : Ashmead Mohammed
+* Discription : Definitions for hello.c
 */
 
 #ifndef _hello_h
 #define _hello_h
 
-typedef struct World {
+typedef struct Object {
 	int id ;
-	char *msg ;
-	} World ;
+	char *name ;
+	} Object ;
 
-World *NewWorld(int id, const char *msg) ;
+Object *NewObject(int id, const char *name) ;
 
-void Say(World *world) ;
+void ObjectOutput(Object *world) ;
 
-void DestroyWorld( World *world) ;
+void DestroyObject(Object *world) ;
 
 #endif
