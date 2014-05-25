@@ -16,8 +16,8 @@ typedef struct Object {
 
 Object *NewObject(int id, const char *name) ;
 
-void ObjectOutput(Object *world) ;
+void ObjectOutput(Object *obj) ;
 
-void DestroyObject(Object *world) ;
+void DestroyObject(Object *obj) ;
 
 #endif
