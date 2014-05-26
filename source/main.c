@@ -26,7 +26,7 @@ int main (int argc, char **argv) {
 		ObjectOutput(hello[j]) ;
 	}
 	
-	for(k = 1 ; k < argc ; k++) {
+	for(k = 0 ; k < argc ; k++) {
 		DestroyObject(hello[k]) ;
 	}
 
