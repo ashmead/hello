@@ -1,6 +1,7 @@
 /*
 * This software is free to use and distribute in any form the end user sees fit.
-* The author will stand no liability for damage or loss incured prior, during  and after its use. 
+* The author will stand no liability for damage or loss incured prior, during  and after its use.
+* Keep software free. Contribute to an open source project.
 * Name        : hello.h
 * Author      : Ashmead Mohammed
 * Discription : Definitions for hello.c
