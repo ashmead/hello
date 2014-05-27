@@ -1,6 +1,6 @@
 /*
 * This software is free to use and distribute in any form the end user sees fit.
-* The author will stand no liability for damage or loss incured prior, during  and after its use.
+* The author assumes no responsibility for damage or loss incurred prior, during and after its use.
 * Keep software free. Contribute to an open source project.
 * Name        : the most absolutely stunning hello world program in thello mutha fugin world!!!
 * Author      : Ashmead Mohammed
