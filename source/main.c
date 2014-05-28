@@ -4,7 +4,7 @@
 * Keep software free. Contribute to an open source project.
 * Name        : the most absolutely stunning hello world program in thello mutha fugin world!!!
 * Author      : Ashmead Mohammed
-* Discription : Hello World algorithm using abstract data types and some other basics in C. 
+* Discription : Hello World algorithm using data structures and some other basics in C. 
 */
 
 #include <stdio.h>
