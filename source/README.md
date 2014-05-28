@@ -1,13 +1,12 @@
-/*
-* This software is free to use and distribute in any form the end user sees fit.
-* The author assumes no responsibility for damage or loss incurred prior, during and after its use.
-* Keep software free. Contribute to an open source project.
-* Name        : The most absolutely stunning hello world program in thello mutha fugin world!!!
-* Author      : Ashmead Mohammed
-* Discription : Hello World algorithm using abstract data types and some other basics in C. 
-*/
+ Readme file for The most absolutely stunning hello world program in thello mutha fugin world!!!
+ This software is free to use and distribute in any form the end user sees fit.
+ The author assumes no responsibility for damage or loss incurred prior, during and after its use.
+ Keep software free. Contribute to an open source project.
+ Copyleft Ashmead Mohammed 2014.
+ Discription : Hello World algorithm using data structures and some other basics in C. 
 
-# Directory containing source files
+
+# Source files
 
  hello.c
  hello.h
