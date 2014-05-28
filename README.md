@@ -1,16 +1,16 @@
- Readme file for The most absolutely stunning hello world program in thello mutha fugin world!!!
- This software is free to use and distribute in any form the end user sees fit.
- The author assumes no responsibility for damage or loss incurred prior, during and after its use.
- Keep software free. Contribute to an open source project.
- Copyleft Ashmead Mohammed 2014.
+#Readme file for The most absolutely stunning hello world program in thello mutha fugin world!!!<p>
+ This software is free to use and distribute in any form the end user sees fit.<p>
+ The author assumes no responsibility for damage or loss incurred prior, during and after its use<P>
+ Keep software free. Contribute to an open source project<P>
+ Copyleft Ashmead Mohammed 2014<P>
  Discription : Hello World algorithm using data structures and some other basics in C. 
 
 
 # Source files
 
- hello.c
- hello.h
- main.c
+ hello.c<P>
+ hello.h<P>
+ main.c<P>
  
 # History
 
