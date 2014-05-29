@@ -8,7 +8,7 @@
 */
 
 #include <stdio.h>
-#include "hello.h"
+#include "object.h"
 
 int main (int argc, char **argv) {
 	if(argc == 1){
@@ -24,7 +24,7 @@ int main (int argc, char **argv) {
 	}
 
 	for(j = 0 ; j < argc ; j++) {
-		ObjectOutput(hello[j]) ;
+		OutputObject(hello[j]) ;
 	}
 	
 	for(k = 0 ; k < argc ; k++) {
