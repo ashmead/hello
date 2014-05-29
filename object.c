@@ -11,7 +11,7 @@
 #include <assert.h>
 #include <string.h>
 #include <stdlib.h>
-#include "hello.h"
+#include "object.h"
 
 Object *NewObject(int id, const char *name){
 	Object *obj = malloc(sizeof(Object)) ;
