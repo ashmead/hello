@@ -8,8 +8,8 @@
 
 # Source Files
 
- hello.c<P>
- hello.h<P>
+ object.c<P>
+ object.h<P>
  main.c<P>
  
 # History
