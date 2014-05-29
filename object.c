@@ -13,6 +13,11 @@
 #include <stdlib.h>
 #include "object.h"
 
+typedef struct Object {
+	int id ;
+	char *name ;
+	} Object ;
+
 Object *NewObject(int id, const char *name){
 	Object *obj = malloc(sizeof(Object)) ;
 	obj->id = id ;
