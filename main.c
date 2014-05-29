@@ -24,7 +24,7 @@ int main (int argc, char **argv) {
 	}
 
 	for(j = 0 ; j < argc ; j++) {
-		OutputObject(hello[j]) ;
+		ObjectOutput(hello[j]) ;
 	}
 	
 	for(k = 0 ; k < argc ; k++) {
