@@ -10,10 +10,7 @@
 #ifndef _object_h
 #define _object_h
 
-typedef struct Object {
-	int id ;
-	char *name ;
-	} Object ;
+typedef struct Object Object ;
 
 Object *NewObject(int id, const char *name) ;
 
