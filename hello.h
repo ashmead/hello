@@ -7,8 +7,8 @@
 * Discription : Definitions for hello.c
 */
 
-#ifndef _hello_h
-#define _hello_h
+#ifndef _object_h
+#define _object_h
 
 typedef struct Object {
 	int id ;
