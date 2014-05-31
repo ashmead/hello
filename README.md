@@ -20,6 +20,12 @@
  
 # To Do
 
+ Object
+
  Hash
  
  Tree
+
+ List
+ 
+ 
