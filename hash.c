@@ -6,12 +6,14 @@
 * Author      : Ashmead Mohammed
 * Discription : Implementation of a hash table. 
 */
+
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
 
 #define OK 1
-#define ERR 0
+#define ERR NULL
+#define EXIST 2
 
 typedef struct Node {
 	int id ;
@@ -24,6 +26,7 @@ typedef struct Node {
 Node *CreateMap(const char *name) {
 	Node *n1 = malloc(sizeof(Node)) ;
 	n1->id = 1 ;
+	n1->key = n1->id ;
 	n1->name = strdup(name) ;
 	return n1 ;
 	}
@@ -31,7 +34,7 @@ Node *CreateMap(const char *name) {
 Node *FindKey (Node *hMap, int key) {
 	Node *current = hMap ;
 
-	while( current != NULL ) {
+	while( current ) {
 	if( (key > current->key) && (current->R != NULL) )
 		current = current->R ;
 	else return current ;
@@ -40,25 +43,33 @@ Node *FindKey (Node *hMap, int key) {
 		current = current->L ;
 	else return current ;
 
+	if( (key > current->key) && (current->R == NULL) )
+		return current ; //current = current->R ;
+	//else return current ;
+
+	if ( (key < current->key) && (current->L == NULL) )
+		return current ; //current = current->L ;
+	//else return current ;
+
 //	else if ( ( (current->L == NULL) && (key < current->key ) ) || ( (current->R == NULL)  && (key > current->key) )  )
 //		return current ;
 	if ( key == current->key )
-	return current ;
-	else return ERR ;
+	return EXIST ;
+	//else return ERR ;
 	}
 }
 
 int AddNode(Node *hMap, int key) {
 	Node *current = FindKey(hMap, key) ;
-	if ( current != ERR ) {
+	if ( current == ERR ) {
 		printf("Free to add ie no duplicate.") ;
 		//current->
 		return OK ;
 	}
-	else {
+	else if ( current == EXIST ){
 		printf("Node exists") ;
-		return ERR  ;
-}
+		return EXIST  ;
+	}
 }
 
 int main( void ) {
@@ -69,6 +80,6 @@ int x = AddNode(n, 1) ;
 if(x == ERR)
 	printf("oops");
 else
-	printf("%d", OK);
+	printf("%d", x);
 return 0 ;
 }
